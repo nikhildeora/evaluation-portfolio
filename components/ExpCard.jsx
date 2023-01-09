@@ -3,7 +3,7 @@ import { Text } from '@chakra-ui/react'
 
 const ExpCard = () => {
   return (
-    <div style={{ width: "22%", margin: "auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", marginTop: "30px", padding: "8px", display: "grid", rowGap: "16px", paddingTop: "20px" }}>
+    <div style={{ width: "95%", margin: "auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", marginTop: "30px", padding: "8px", display: "grid", rowGap: "16px", paddingTop: "20px",paddingLeft:"20px" }}>
     <div>
       <Text as='b' fontSize='md'>Anspiring Full Stack Web Developer</Text>
       <Text fontSize='sm'>At Masai School</Text>

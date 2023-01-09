@@ -3,6 +3,7 @@ import Mycard from '../components/Mycard'
 import { Badge } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import ExpCard from '../components/ExpCard'
+import ProjectCard from '../components/ProjectCard'
 
 export default function Home({ mydata }) {
   return (
@@ -12,10 +13,10 @@ export default function Home({ mydata }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <div style={{display:"flex",gap:"35px"}}>
         <div>
           <Mycard avatar={mydata.avatar_url} giturl={mydata.html_url} name={mydata.name} bio={mydata.bio} />
-          <div style={{ border: 'none', width: "22%", margin: "auto", display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "0.6rem", padding: "8px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+          <div style={{ border: 'none', width: "95%", margin: "auto", display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "0.6rem", padding: "8px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
             <Badge colorScheme='green'>Typescript</Badge>
             <Badge colorScheme='green'>HTML</Badge>
             <Badge colorScheme='green'>CSS</Badge>
@@ -32,10 +33,17 @@ export default function Home({ mydata }) {
 
          <ExpCard />
         </div>
+
+        <div>
+          {/* <Text fontSize='5xl' as="b" >Projects</Text> */}
+          <ProjectCard />
+        </div>
       </div>
     </>
   )
 }
+
+
 
 export async function getStaticProps() {
   let res = await fetch(`https://api.github.com/users/nikhildeora`)
