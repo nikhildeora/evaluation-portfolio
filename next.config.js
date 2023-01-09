@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images : {
     unoptimized : true,
-    domains : ["avatars.githubusercontent.com"]
+    domains : ["avatars.githubusercontent.com","api.github.com"]
   }
 }
 
