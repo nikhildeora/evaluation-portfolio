@@ -36,7 +36,7 @@ export default function Home({ mydata }) {
 
         <div>
           {/* <Text fontSize='5xl' as="b" >Projects</Text> */}
-          <ProjectCard />
+          
         </div>
       </div>
     </>
