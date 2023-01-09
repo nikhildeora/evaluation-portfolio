@@ -13,6 +13,9 @@ export default function Home({mydata}) {
       <div>
         <div>
           <Mycard avatar={mydata.avatar_url} giturl={mydata.html_url} name={mydata.name} bio={mydata.bio} />
+          <div style={{border:"1px solid black"}}>
+
+          </div>
         </div>
       </div>
     </>
