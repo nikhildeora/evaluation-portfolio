@@ -7,10 +7,10 @@ const ProjectCard = ({repos}) => {
   return (
     <div>
         <Text fontSize='5xl' as="b" >Projects</Text>
-        <div style={{display:"grid",gridTemplateColumns: "repeat(4,1fr)", gap: "0.6rem", padding: "8px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}>
+        <div style={{display:"grid",gridTemplateColumns: "repeat(2,1fr)", gap: "1.2rem", padding: "8px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}>
             {repos?.map((item)=>{
                 return (
-                    <div key={item.id}>
+                    <div key={item.id} style={{border:"1px solid black",padding:"30px"}} >
                         <ChatIcon />
                        <Text>{item.name}</Text>
                        <Text>{item.visibility}</Text>
