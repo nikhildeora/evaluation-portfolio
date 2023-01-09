@@ -45,7 +45,7 @@ const Mycard = ({avatar,giturl,name,bio}) => {
                {name}
             </Heading>
             <Text fontWeight={600} color={'gray.500'} mb={4}>
-              <a href={giturl} target="_blank" style={{color:"grey"}}>@nikhilDeora</a>
+              <a href={giturl} target="_blank" rel="noreferrer" style={{color:"grey"}}>@nikhilDeora</a>
             </Text>
             <Text
               textAlign={'center'}
@@ -56,7 +56,7 @@ const Mycard = ({avatar,giturl,name,bio}) => {
     
     
             <Stack mt={8} direction={'row'} spacing={4} justifyContent={"space-around"}>
-                <ChakraLink href="https://drive.google.com/file/d/10gcj2_8-ZXwjgekaawHwj70bA9XS5S1F/view?usp=share_link"  target="_blank"  >
+                <ChakraLink href="https://drive.google.com/file/d/10gcj2_8-ZXwjgekaawHwj70bA9XS5S1F/view?usp=share_link"  target="_blank"  rel="noreferrer">
               <Button
                 flex={1}
                 color={'black'}
@@ -72,7 +72,7 @@ const Mycard = ({avatar,giturl,name,bio}) => {
                 Resume
               </Button></ChakraLink>
               
-              <ChakraLink href={giturl} target="_blank" >
+              <ChakraLink href={giturl} target="_blank" rel="noreferrer">
               <Button
                 flex={1}
                 fontSize={'sm'}
