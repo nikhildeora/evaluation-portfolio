@@ -22,7 +22,7 @@ const Projects = ({repos}) => {
   )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
     let res = await fetch(`https://api.github.com/search/repositories?q=user:nikhildeora+fork:true&sort=updated&per_page=10&type=Repositories`)
     let data = await res.json()
     return {

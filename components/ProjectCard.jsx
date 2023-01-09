@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from '@chakra-ui/react'
-import {StarIcon } from '@chakra-ui/icons'
+import {StarIcon,ChatIcon ,ViewIcon} from '@chakra-ui/icons'
 
 
 const ProjectCard = ({repos}) => {
@@ -11,12 +11,14 @@ const ProjectCard = ({repos}) => {
             {repos?.map((item)=>{
                 return (
                     <div key={item.id}>
-                        
+                        <ChatIcon />
                        <Text>{item.name}</Text>
                        <Text>{item.visibility}</Text>
                        <StarIcon />
                        <Text>{item.score}</Text>
-
+                        <ViewIcon />
+                        <Text>{item.forks_count}</Text>
+                        <Text>{item.language}</Text>
                     </div>
                 )
             })}
