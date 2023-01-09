@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import ExpCard from '../components/ExpCard';
 
 const Experience = () => {
   return (
@@ -8,7 +9,7 @@ const Experience = () => {
         <title>My Experience page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <div>experience</div>
+     <ExpCard />
     </>
   )
 }
